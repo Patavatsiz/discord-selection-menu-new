@@ -1,8 +1,8 @@
 # Kurulum
 <p>
   <b>
-    Konsola <code>npm i discord.js</code> yazıp yüklenince, <code>node .</code> yazmanız gerekiyor.<br>
-    Ardından <code>setup.js'i</code> doldurmalısınız.</br>
+    <code>setup.js'deki</code> belirtilen boşlukları doldurmalısınız.<br>
+    Ardından konsola <code>npm i discord.js</code> yazıp yüklenince, <code>node .</code> yazmanız gerekiyor.</br> 
   </b>
 </p>
   <p>
