@@ -2,7 +2,7 @@ const { Client, MessageEmbed, MessageActionRow, MessageSelectMenu } = require('d
 
 const client = new Client({
   intents: 32767,
-  /*presence: { // boyun durumu için / ** / kaldır 
+  /*presence: { // botun durumu için / ** / kaldır 
         activities: [{
             name: "",
             type: "LISTENING",
