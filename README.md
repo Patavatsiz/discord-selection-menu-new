@@ -11,3 +11,10 @@
         Editleyip kullanabilirsiniz.
   </b>
  </p>
+
+# Görseller
+
+<img src="https://cdn.discordapp.com/attachments/881037084859715604/881037179101536316/unknown.png" width="75%">
+<img src="https://cdn.discordapp.com/attachments/881037084859715604/881037232742469693/unknown.png" width="60%">
+<img src="https://cdn.discordapp.com/attachments/881037084859715604/881037278590435349/unknown.png" width="60%">
+<img src="https://cdn.discordapp.com/attachments/881037084859715604/881037382118412319/unknown.png" width="75%">
