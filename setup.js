@@ -2,7 +2,7 @@ const { Client, MessageEmbed, MessageActionRow, MessageSelectMenu } = require('d
 
 const client = new Client({
   intents: 32767,
-  /*presence: {
+  /*presence: { // boyun durumu için / ** / kaldır 
         activities: [{
             name: "",
             type: "LISTENING",
@@ -16,8 +16,8 @@ client.settings = {
   prefix: "",
   token: "",
 
-  etkinlik: "",
-  cekilis: "",
+  etkinlik: "", // etkinlik ve çekiliş katılımcısı rolleri
+  cekilis: "", // etkinlik ve çekiliş katılımcısı rolleri
 
   burcroles: ["", "", "", "", "", "", "", "", "", "", "", "",], // rolleri 139. satırdaki sırayla gir
 
@@ -34,16 +34,16 @@ client.on("messageCreate", async (message) => {
         .setPlaceholder("Etkinlik Rolleri")
         .addOptions([
           {
-            label: "Çekiliş Katılımcısı",
+            label: "Çekiliş Katılımcısı", // başlık
             value: "cekilis",
-            description: "Çekiliş katılımcısı rolünü almak için tıkla!",
-            emoji: "🎉"
+            description: "Çekiliş katılımcısı rolünü almak için tıkla!", // açıklama label'ın altında gözükür
+            emoji: "🎉" // emoji ayarlayabilirsiniz label'ın yanında gözükür
           },
           {
             label: "Etkinlik Katılımcısı",
             value: "etkinlik",
             description: "Etkinlik katılımcısı rolünü almak için tıkla!",
-            emoji: "📢"
+            emoji: "📢" // emoji ayarlayabilirsiniz
           }
         ])
       );
@@ -210,7 +210,7 @@ client.on("interactionCreate", async(interaction) => {
     interaction.member.roles.add(client.settings.burcroles[4]) 
     remove()
     } else if (values === "Başak") {
-    interaction.reply({ content: `Rol başarıyla hesabına tanımlandı.`, ephemeral: true })
+    interaction.reply({ content: `Rol başarıyla hesabına tanımlandı.`, ephemeral: true }) // mesajı değiştirebiirsiniz / ephemeral = true ? Yalnızca kişiye görünen mesaj : Herkese görünen mesaj (Tavsiye edilmez)
     interaction.member.roles.add(client.settings.burcroles[5]) 
     remove()
     } else if (values === "Terazi") {
